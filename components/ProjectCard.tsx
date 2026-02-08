@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
 
 type Props = {
@@ -6,6 +7,7 @@ type Props = {
   techStack: string[]
   github: string
   live?: string
+  image: string   
 }
 
 export default function ProjectCard({
@@ -14,12 +16,20 @@ export default function ProjectCard({
   techStack,
   github,
   live,
+  image,         
 }: Props) {
   return (
     <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
       
-      {/* Project Preview Placeholder */}
-      <div className="h-40 bg-gray-800 rounded-lg mb-4" />
+      {/* Project Image */}
+      <div className="relative w-full h-40 rounded-lg overflow-hidden mb-4">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover"
+        />
+      </div>
 
       {/* Title */}
       <h3 className="text-lg font-semibold">{title}</h3>

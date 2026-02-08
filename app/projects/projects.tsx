@@ -1,4 +1,12 @@
-export const projects = [
+export type Project = {
+  title: string
+  description: string
+  techStack: string[]
+  github: string
+  image: string
+}
+
+export const projects: Project[] = [
   {
     title: "TwoD Verse",
     description:
@@ -11,7 +19,7 @@ export const projects = [
       "WebSocket",
     ],
     github: "https://github.com/anshul-ab17/twoD-verse",
-    image: "/projects/twoDverse.png",   
+    image: "/projects/twoDverse.png",
   },
   {
     title: "Moneo",

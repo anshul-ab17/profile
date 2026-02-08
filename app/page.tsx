@@ -17,6 +17,7 @@ export default function Home() {
             description={project.description}
             techStack={project.techStack}
             github={project.github}
+            image={project.image}  
           />
         ))}
       </div>
