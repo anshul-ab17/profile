@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Two Verse",
+    title: "TwoD Verse",
     description:
       "A real-time 2D metaverse platform inspired by Gather.town with spatial interactions and live WebSocket state synchronization.",
     techStack: [
@@ -10,7 +10,8 @@ export const projects = [
       "Prisma",
       "WebSocket",
     ],
-    github: "https://github.com/anshul-ab17/project",
+    github: "https://github.com/anshul-ab17/twoD-verse",
+    image: "/projects/twoDverse.png",   
   },
   {
     title: "Moneo",
@@ -24,7 +25,8 @@ export const projects = [
       "Zod",
       "WebSocket",
     ],
-    github: "https://github.com/anshul-ab17/project",
+    github: "https://github.com/anshul-ab17/Moane-x",
+    image: "/projects/moneo.png",
   },
   {
     title: "Updawg",
@@ -37,7 +39,8 @@ export const projects = [
       "Tokio",
       "Actix",
     ],
-    github: "https://github.com/anshul-ab17/project",
+    github: "https://github.com/anshul-ab17/upDawg",
+    image: "/projects/upDawg.png",
   },
   {
     title: "Canvas",
@@ -49,6 +52,7 @@ export const projects = [
       "Prisma",
       "WebSocket",
     ],
-    github: "https://github.com/anshul-ab17/project",
+    github: "https://github.com/anshul-ab17/canvex",
+    image: "/projects/canvex.png",
   },
 ]
