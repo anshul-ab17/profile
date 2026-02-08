@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import { useEffect, useState } from "react"
 import {
   Github,
@@ -35,11 +35,24 @@ export default function Sidebar() {
     <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 space-y-6">
       {/* Profile */}
       <div className="flex flex-col items-center text-center">
-        <div className="w-24 h-24 rounded-full bg-gray-700 mb-4" />
-        <h2 className="text-xl font-semibold">Anshul Bharat</h2>
-        <p className="text-gray-400 text-sm">Full Stack Developer</p>
-      </div>
+        <div className="relative w-28 h-28 mb-5">
+          <Image
+            src="https://avatars.githubusercontent.com/u/96761799?v=4"
+            alt="Anshul Bharat"
+            fill
+            className="rounded-full object-cover border border-white/10 shadow-lg shadow-purple-500/10"
+            sizes="112px"
+          />
+        </div>
 
+        <h2 className="text-xl font-semibold tracking-wide">
+          Anshul Bharat
+        </h2>
+
+        <p className="text-muted-foreground text-sm">
+          Full Stack Developer
+        </p>
+      </div>
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 justify-center">
         {["NextJS", "React", "Node", "Postgres", "Rust"].map((tech) => (

@@ -1,10 +1,11 @@
-import { Github } from "lucide-react"
+import { Github, ExternalLink } from "lucide-react"
 
 type Props = {
   title: string
   description: string
   techStack: string[]
   github: string
+  live?: string
 }
 
 export default function ProjectCard({
@@ -12,14 +13,23 @@ export default function ProjectCard({
   description,
   techStack,
   github,
+  live,
 }: Props) {
   return (
-    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:border-white/20 transition">
+    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
+      
+      {/* Project Preview Placeholder */}
       <div className="h-40 bg-gray-800 rounded-lg mb-4" />
 
+      {/* Title */}
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-gray-400 text-sm mt-2">{description}</p>
 
+      {/* Description */}
+      <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+        {description}
+      </p>
+
+      {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mt-4">
         {techStack.map((tech) => (
           <span
@@ -40,12 +50,20 @@ export default function ProjectCard({
           className="flex items-center gap-2 text-sm px-3 py-2 border border-white/10 rounded-lg hover:bg-white/10 transition"
         >
           <Github size={16} />
+          Code
         </a>
 
-        {/* <button className="flex items-center gap-2 text-sm px-3 py-2 border border-white/10 rounded-lg hover:bg-white/10 transition">
-          <ExternalLink size={16} />
-          Live
-        </button> */}
+        {live && (
+          <a
+            href={live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm px-3 py-2 border border-white/10 rounded-lg hover:bg-white/10 transition"
+          >
+            <ExternalLink size={16} />
+            Live
+          </a>
+        )}
       </div>
     </div>
   )
