@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "WebSocket",
     ],
     github: "https://github.com/anshul-ab17/twoD-verse",
-    image: "/projects/twoDverse.png",
+    image: "/twoDverse.png",
   },
   {
     title: "Moneo",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "WebSocket",
     ],
     github: "https://github.com/anshul-ab17/Moane-x",
-    image: "/projects/moneo.png",
+    image: "/moneo.png",
   },
   {
     title: "Updawg",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
       "Actix",
     ],
     github: "https://github.com/anshul-ab17/upDawg",
-    image: "/projects/upDawg.png",
+    image: "/upDawg.png",
   },
   {
     title: "Canvas",
@@ -61,6 +61,6 @@ export const projects: Project[] = [
       "WebSocket",
     ],
     github: "https://github.com/anshul-ab17/canvex",
-    image: "/projects/canvex.png",
+    image: "/canvex.png",
   },
 ]
