@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar"
 import AppLoader from "@/components/AppLoader"
 
 export const metadata = {
-  title: "Anshul Bharat | Portfolio",
+  title: "Anshul Bharat",
   description: "Full Stack Developer Portfolio",
   icons: {
     icon: "/logo.svg",

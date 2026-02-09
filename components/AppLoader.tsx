@@ -21,7 +21,7 @@ export default function AppLoader({
     <>
       {loading && (
             <div
-            className={`fixed inset-0 z-[999] flex items-center justify-center bg-black transition-all duration-500 ${
+            className={`fixed inset-0 z-999 flex items-center justify-center bg-black transition-all duration-500 ${
                 fade
                 ? "opacity-0 scale-105 blur-sm"
                 : "opacity-100 scale-100 blur-0"
